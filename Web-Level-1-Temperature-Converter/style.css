@@ -1,0 +1,240 @@
+/* ==================== RESET ==================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ==================== BODY ==================== */
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 30px;
+
+    font-family: Arial, sans-serif;
+
+    background: linear-gradient(
+        135deg,
+        #0f172a,
+        #1e3a8a
+    );
+
+    color: #f8fafc;
+}
+
+
+/* ==================== CONTAINER ==================== */
+
+.converter-container {
+    width: 100%;
+
+    max-width: 500px;
+
+    padding: 40px;
+
+    background-color: #1e293b;
+
+    border: 1px solid #334155;
+
+    border-radius: 20px;
+
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+}
+
+
+/* ==================== HEADING ==================== */
+
+h1 {
+    text-align: center;
+
+    font-size: 34px;
+
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    text-align: center;
+
+    color: #94a3b8;
+
+    font-size: 15px;
+
+    line-height: 1.6;
+
+    margin-bottom: 35px;
+}
+
+
+/* ==================== INPUT GROUP ==================== */
+
+.input-group {
+    margin-bottom: 22px;
+}
+
+.input-group label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    color: #e2e8f0;
+}
+
+
+/* ==================== INPUT & SELECT ==================== */
+
+input,
+select {
+    width: 100%;
+
+    padding: 14px 15px;
+
+    border: 1px solid #475569;
+
+    border-radius: 10px;
+
+    outline: none;
+
+    background-color: #0f172a;
+
+    color: #f8fafc;
+
+    font-size: 16px;
+
+    transition: border-color 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+input:focus,
+select:focus {
+    border-color: #38bdf8;
+
+    box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.1);
+}
+
+
+/* ==================== CONVERT BUTTON ==================== */
+
+#convert-button {
+    width: 100%;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background-color: #38bdf8;
+
+    color: #0f172a;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+#convert-button:hover {
+    background-color: #7dd3fc;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 8px 20px rgba(56, 189, 248, 0.2);
+}
+
+
+/* ==================== ERROR MESSAGE ==================== */
+
+.error-message {
+    min-height: 20px;
+
+    margin-top: 7px;
+
+    color: #f87171;
+
+    font-size: 14px;
+}
+
+
+/* ==================== RESULTS ==================== */
+
+.results {
+    margin-top: 35px;
+}
+
+.results h2 {
+    font-size: 22px;
+
+    margin-bottom: 15px;
+}
+
+
+/* ==================== RESULT CARDS ==================== */
+
+.result-card {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 15px 18px;
+
+    margin-bottom: 12px;
+
+    background-color: #0f172a;
+
+    border: 1px solid #334155;
+
+    border-radius: 10px;
+}
+
+.result-card span {
+    color: #cbd5e1;
+
+    font-size: 16px;
+}
+
+.result-card strong {
+    color: #38bdf8;
+
+    font-size: 18px;
+}
+
+
+/* ==================== MOBILE ==================== */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .converter-container {
+        padding: 25px 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .subtitle {
+        font-size: 14px;
+    }
+
+}
